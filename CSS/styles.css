@@ -192,7 +192,7 @@ fill: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 
@@ -721,20 +721,15 @@ margin-right: 8px;
 }
 .picture:hover,
 .picture:focus{
-    box-shadow: var(--grey-text);
+    
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.picture{
+    display: block;
     
 }
-.team-it{
-    background: var(--white);
-    box-sizing: border-box;
-    border: 1px;
 
-}
-.team-it:hover,
-.team-it:focus{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-}
 
 
 .card-set{
