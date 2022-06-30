@@ -124,22 +124,36 @@ width: 270px;
 height: 120px;
 background-color: var(--grey-bg);
 }
-.meil:hover,
-.meil:focus{
-    color: var(--blue);
-}
+
 
 .meil{
     margin-right: 10px;
+    align-items: center;
 }
 .meil{
     --color4:var(--grey-text)
 }
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--blue);
+}
+.contact-link:hover.meil,
+.contact-link:focus.meil{
+    fill: var(--blue);
+}
 .meil:hover,
 .meil:focus{
-    --color4:var(--blue);
+    fill: currentColor;
+}
+.list-contact.list:hover,
+.list-contact.list:focus{
+    color: var(--blue);
 }
 
+.meil:hover,
+.meil:focus{
+    fill: var(--blue);
+}
 .media{
     display: flex;
     justify-content: center;
@@ -184,17 +198,21 @@ fill: var(--white);
     fill: var(--blue);
     border-radius: 4px;
 }
-.client-list:hover .client-icon,
-.client-list:focus .client-icon{
-    fill: var(--blue);
-}
+
 .client-icon{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
+.client{
+    width: 100%;
+    height: 100%;
+}
+.client:hover,
+.client:focus{
+    color: var(--blue);
+}
 
 .client-icon{
     --color1:var(--grey-blue);
@@ -204,11 +222,24 @@ fill: var(--white);
 .client-icon:focus{
     --color1:var(--blue);
 }
-
-.client{
-    width: 100%;
-    height: 100%;
+.client-list:hover,
+.client-list:focus{
+fill: var(--blue);
+border-color: var(--blue);
 }
+.client-list:hover .client-icon,
+.client-list:focus .client-icon{
+    fill: var(--blue);
+}
+
+.client-icon:hover.client-list ,
+.client-icon:focus.client-list {
+    fill:currentColor;
+}
+.client:hover,
+.client:focus{
+    fill: currentColor;
+} 
 
 .client-items{
     display: flex;
@@ -235,15 +266,7 @@ width: 170px;
     color: var(--blue);
 }
 
-.client-list:hover .client-icon,
-.client-list:focus .client-icon{
-    fill: var(--blue);
-}
-.client-list:hover,
-.client-list:focus{
-color: var(--blue);
-border-color: var(--blue);
-}
+
 
 .footer-media{
     font-family: "Roboto";
@@ -257,7 +280,6 @@ border-color: var(--blue);
 }
 .footer-media{
     display: flex;
-    margin-top: 20px;
     margin-bottom: 20px;
 
 }
@@ -290,14 +312,14 @@ border-color: var(--blue);
     fill: var(--white);
 
 }
-.fot{
-    display:inline-block;
+
+.fotter{
     margin-left: 70px;
-    
-    
 }
+
 .line{
     display: flex;
+    align-items: baseline;
 }
 
 
@@ -362,14 +384,15 @@ margin-right: 50px;
 }
 
 .contact-link {
-    display: inline-block;
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-align: left;
+    display: flex;
+    align-items: center;
     /* info@devstudio.com */
     color: var(--grey-text);
 
