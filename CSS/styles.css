@@ -205,29 +205,17 @@ fill: var(--grey-blue);
     width: 100%;
     height: 100%;
 }
-
-.client-list:hover,
-.client-list:focus{
-    color: var(--grey-blue);
-}
-.client-list:hover,
-.client-list:focus{
-    color: var(--blue);
-    border-color: var(--blue);
-}
-.client-list:hover,
-.client-list:focus{
+.client-icon {
     fill: currentColor;
 }
 
-.client-icon:hover{
-    fill: var(--blue);
+.client-list:hover,
+.client-list:focus {
+    color: var(--blue);
+    border-color: var(--blue);
 }
 
-.client:hover,
-.client:focus{
-    color: var(--blue);
-}
+
 .client-items{
     display: flex;
 margin-top: 50px;
